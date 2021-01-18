@@ -1,12 +1,15 @@
 <?php
+require_once('config.php');
 session_start();
 
 $log_level = 1;
-$config = parse_ini_file('config.ini');
+
+/*$config = parse_ini_file('config.ini');
 $username = $config['username'];
 $password = $config['password'];
 $client_id = $config['client_id'];
 $client_secret = $config['client_secret'];
+*/
 $access_token = $_SESSION["access_token"];
 $refresh_token = $_SESSION["refresh_token"];
 
